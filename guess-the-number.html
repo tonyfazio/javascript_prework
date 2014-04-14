@@ -1,0 +1,52 @@
+<html>
+<head>
+  <title>Guess the Number!</title>
+</head>
+<body>
+
+<script type="text/javascript">
+  var secretNumber = parseInt(Math.random() * 100, 10) + 1;
+  var num = prompt("Input a number please:");
+
+  var tooLow = function(x){
+  	alert("Your guess was too low!");
+  	num = prompt("Input a number please:");
+  	  if(parseInt(num) === secretNumber){
+  	alert("nailed it. go buy a loto!");
+  }
+  else if (parseInt(num) < secretNumber){
+  	tooLow(num);
+  }
+  else {
+	tooHigh(num);
+}
+}
+
+var tooHigh = function(x){
+	alert("Your guess was too high!");
+	num = prompt("Input a number please:");
+  	if(parseInt(num) === secretNumber){
+  	alert("nailed it. go buy a loto!");
+  }
+  else if (parseInt(num) < secretNumber){
+  	tooLow(num);
+  }
+  else {
+	tooHigh(num);
+  }
+}
+
+  if(parseInt(num) === secretNumber){
+  	alert("nailed it. go buy a loto!");
+  }
+  else if (parseInt(num) < secretNumber){
+  	tooLow(num);
+  }
+  else {
+	tooHigh(num);
+}
+
+</script>
+
+</body>
+</html>
