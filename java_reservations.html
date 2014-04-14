@@ -9,6 +9,7 @@
   var second = "Smith";
   var third = "Tamba";
   var name = "";
+  var answer = "";
   var does_reso = prompt("Do you have a reservation?");
   if (does_reso.toUpperCase() == "YES"){
   	alert("Very good.");
@@ -21,6 +22,7 @@
   	}
   else if (does_reso.toUpperCase() == "NO"){
   	alert("There is a two hour wait.");
+  	answer = prompt("Would you like to wait?");
   }
  
 </script>
