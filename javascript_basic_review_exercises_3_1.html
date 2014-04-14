@@ -1,0 +1,43 @@
+<html>
+<head>
+  <title>Javascript Bar and Grill</title>
+</head>
+<body>
+
+<script type="text/javascript">
+var yell = function(x){
+	alert(x.toUpperCase());
+};
+
+yell("bob how are you");
+
+var divideBy = function(x,y){
+	return x/y;
+};
+var result = divideBy(50, 2);
+console.log('Result should be 25:', result);
+
+result = divideBy(40, 10);
+console.log('Result should be 4:', result);
+
+result = divideBy(99, 3);
+console.log('Result should be 33:', result);
+
+var welcome = function(x,y){
+	if (y === undefined){
+		return "Welcome, "+ x +"!";
+	}
+	else{
+	return "Welcome, "+ x + " and "+ y +"!";
+}
+};
+
+var result = welcome('Alice', 'Bob');
+console.log('Result should be "Welcome, Alice and Bob!"', result);
+
+var result = welcome('Alice');
+console.log('Result should be "Welcome, Alice!"', result);
+</script>
+
+</body>
+</html>
