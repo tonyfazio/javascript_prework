@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Javascript Bar and Grill</title>
+</head>
+<body>
+
+<script type="text/javascript">
+  var first = "Rosco";
+  var second = "Smith";
+  var third = "Tamba";
+  var name = "";
+  var does_reso = prompt("Do you have a reservation?");
+  if (does_reso.toUpperCase() == "YES"){
+  	alert("Very good.");
+  	name = prompt("Under which name is the reservation?");
+  	if (name == first || name == second || name== third){
+  		alert("Right this way " + name);}
+  	else {
+  		alert("I am sorry. We don't have you down for a reservation.");
+  	}
+  	}
+  
+  else if (does_reso.toUpperCase() == "NO"){
+  	alert("There is a two hour wait?");
+  }
+ 
+</script>
+
+</body>
+</html>
